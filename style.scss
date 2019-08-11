@@ -357,7 +357,6 @@ h1 {
   .carousel__indicator:nth-of-type(5) {
   opacity: 1;
 }
-<<<<<<< HEAD
 .carousel__control {
   height: 30px;
   width: 30px;
@@ -476,13 +475,6 @@ h1 {
   background-image: url("https://unsplash.it/660?random");
   background-size: cover;
   background-position: center;
-=======
-.carousel__thumb:nth-of-type(5):checked
-  ~ .carousel__track
-  .carousel__slide:nth-of-type(3) {
-  -webkit-transform: translateX(-300%);
-  transform: translateX(-300%);
->>>>>>> 0b44cfede5b4104afba556e9214103ba4beb726a
 }
 .carousel__slide:nth-of-type(5),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(5) {
