@@ -1,11 +1,17 @@
+/**
+------- GENERAL STYLES
+**/
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap");
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -29,146 +35,6 @@ h1 {
 .carousel__controls,
 .carousel__thumb {
   display: none;
-}
-
-.carousel__thumb:nth-of-type(1):checked ~ .carousel__track {
-  -webkit-transform: translateX(0%);
-  transform: translateX(0%);
-}
-
-.carousel__thumb:nth-of-type(1):checked ~ .carousel__track .carousel__slide:nth-of-type(5) {
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-}
-
-.carousel__thumb:nth-of-type(1):checked ~ .carousel__slide:nth-of-type(1) {
-  transition: opacity 0.5s, -webkit-transform 0.5s;
-  transition: opacity 0.5s, transform 0.5s;
-  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
-  top: 0;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-
-.carousel__thumb:nth-of-type(1):checked ~ .carousel__controls:nth-of-type(1) {
-  display: block;
-  opacity: 1;
-}
-
-.carousel__thumb:nth-of-type(1):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(1) {
-  opacity: 1;
-}
-
-.carousel__thumb:nth-of-type(2):checked ~ .carousel__track {
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-}
-
-.carousel__thumb:nth-of-type(2):checked ~ .carousel__slide:nth-of-type(2) {
-  transition: opacity 0.5s, -webkit-transform 0.5s;
-  transition: opacity 0.5s, transform 0.5s;
-  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
-  top: 0;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-
-.carousel__thumb:nth-of-type(2):checked ~ .carousel__controls:nth-of-type(2) {
-  display: block;
-  opacity: 1;
-}
-
-.carousel__thumb:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) {
-  opacity: 1;
-}
-
-.carousel__thumb:nth-of-type(3):checked ~ .carousel__track {
-  -webkit-transform: translateX(-200%);
-  transform: translateX(-200%);
-}
-
-.carousel__thumb:nth-of-type(3):checked ~ .carousel__slide:nth-of-type(3) {
-  transition: opacity 0.5s, -webkit-transform 0.5s;
-  transition: opacity 0.5s, transform 0.5s;
-  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
-  top: 0;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-
-.carousel__thumb:nth-of-type(3):checked ~ .carousel__controls:nth-of-type(3) {
-  display: block;
-  opacity: 1;
-}
-
-.carousel__thumb:nth-of-type(3):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(3) {
-  opacity: 1;
-}
-
-.carousel__thumb:nth-of-type(4):checked ~ .carousel__track {
-  -webkit-transform: translateX(-300%);
-  transform: translateX(-300%);
-}
-
-.carousel__thumb:nth-of-type(4):checked ~ .carousel__slide:nth-of-type(4) {
-  transition: opacity 0.5s, -webkit-transform 0.5s;
-  transition: opacity 0.5s, transform 0.5s;
-  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
-  top: 0;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-
-.carousel__thumb:nth-of-type(4):checked ~ .carousel__controls:nth-of-type(4) {
-  display: block;
-  opacity: 1;
-}
-
-.carousel__thumb:nth-of-type(4):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(4) {
-  opacity: 1;
-}
-
-.carousel__thumb:nth-of-type(5):checked ~ .carousel__track {
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-}
-
-.carousel__thumb:nth-of-type(5):checked ~ .carousel__track .carousel__slide:nth-of-type(5) {
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-}
-
-.carousel__thumb:nth-of-type(5):checked ~ .carousel__slide:nth-of-type(5) {
-  transition: opacity 0.5s, -webkit-transform 0.5s;
-  transition: opacity 0.5s, transform 0.5s;
-  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
-  top: 0;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-
-.carousel__thumb:nth-of-type(5):checked ~ .carousel__controls:nth-of-type(5) {
-  display: block;
-  opacity: 1;
-}
-
-.carousel__thumb:nth-of-type(5):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(5) {
-  opacity: 1;
 }
 
 .carousel__control {
@@ -246,31 +112,6 @@ h1 {
   opacity: 1;
 }
 
-.carousel__track .carousel__slide:nth-of-type(1) {
-  -webkit-transform: translateX(0%);
-  transform: translateX(0%);
-}
-
-.carousel__track .carousel__slide:nth-of-type(2) {
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-}
-
-.carousel__track .carousel__slide:nth-of-type(3) {
-  -webkit-transform: translateX(200%);
-  transform: translateX(200%);
-}
-
-.carousel__track .carousel__slide:nth-of-type(4) {
-  -webkit-transform: translateX(300%);
-  transform: translateX(300%);
-}
-
-.carousel__track .carousel__slide:nth-of-type(5) {
-  -webkit-transform: translateX(400%);
-  transform: translateX(400%);
-}
-
 .carousel__slide {
   height: 100%;
   position: absolute;
@@ -282,11 +123,84 @@ h1 {
   overflow: hidden;
 }
 
+/**
+------- FIRST SLIDE
+**/
+.carousel__track .carousel__slide:nth-of-type(1) {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+.carousel__thumb:nth-of-type(1):checked ~ .carousel__track {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+.carousel__thumb:nth-of-type(1):checked ~ .carousel__track .carousel__slide:nth-of-type(5) {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.carousel__thumb:nth-of-type(1):checked ~ .carousel__slide:nth-of-type(1) {
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.carousel__thumb:nth-of-type(1):checked ~ .carousel__controls:nth-of-type(1) {
+  display: block;
+  opacity: 1;
+}
+
+.carousel__thumb:nth-of-type(1):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(1) {
+  opacity: 1;
+}
+
 .carousel__slide:nth-of-type(1),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(1) {
   background-image: url("https://unsplash.it/630?random");
   background-size: cover;
   background-position: center;
+}
+
+/**
+------- SECOND SLIDE
+**/
+.carousel__track .carousel__slide:nth-of-type(2) {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.carousel__thumb:nth-of-type(2):checked ~ .carousel__track {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.carousel__thumb:nth-of-type(2):checked ~ .carousel__slide:nth-of-type(2) {
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.carousel__thumb:nth-of-type(2):checked ~ .carousel__controls:nth-of-type(2) {
+  display: block;
+  opacity: 1;
+}
+
+.carousel__thumb:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) {
+  opacity: 1;
 }
 
 .carousel__slide:nth-of-type(2),
@@ -296,6 +210,40 @@ h1 {
   background-position: center;
 }
 
+/**
+------- THIRD SLIDE
+**/
+.carousel__track .carousel__slide:nth-of-type(3) {
+  -webkit-transform: translateX(200%);
+  transform: translateX(200%);
+}
+
+.carousel__thumb:nth-of-type(3):checked ~ .carousel__track {
+  -webkit-transform: translateX(-200%);
+  transform: translateX(-200%);
+}
+
+.carousel__thumb:nth-of-type(3):checked ~ .carousel__slide:nth-of-type(3) {
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.carousel__thumb:nth-of-type(3):checked ~ .carousel__controls:nth-of-type(3) {
+  display: block;
+  opacity: 1;
+}
+
+.carousel__thumb:nth-of-type(3):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(3) {
+  opacity: 1;
+}
+
 .carousel__slide:nth-of-type(3),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(3) {
   background-image: url("https://unsplash.it/650?random");
@@ -303,11 +251,94 @@ h1 {
   background-position: center;
 }
 
+/**
+------- FOURTH SLIDE
+**/
+.carousel__track .carousel__slide:nth-of-type(4) {
+  -webkit-transform: translateX(300%);
+  transform: translateX(300%);
+}
+
+.carousel__thumb:nth-of-type(4):checked ~ .carousel__track {
+  -webkit-transform: translateX(200%);
+  transform: translateX(200%);
+}
+
+.carousel__thumb:nth-of-type(4):checked ~ .carousel__track .carousel__slide:nth-of-type(3) {
+  -webkit-transform: translateX(-300%);
+  transform: translateX(-300%);
+}
+
+.carousel__thumb:nth-of-type(4):checked ~ .carousel__slide:nth-of-type(4) {
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.carousel__thumb:nth-of-type(4):checked ~ .carousel__controls:nth-of-type(4) {
+  display: block;
+  opacity: 1;
+}
+
+.carousel__thumb:nth-of-type(4):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(4) {
+  opacity: 1;
+}
+
 .carousel__slide:nth-of-type(4),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(4) {
   background-image: url("https://unsplash.it/660?random");
   background-size: cover;
   background-position: center;
+}
+
+/**
+------- FIFTH SLIDE
+**/
+.carousel__track .carousel__slide:nth-of-type(5) {
+  -webkit-transform: translateX(400%);
+  transform: translateX(400%);
+}
+
+.carousel__thumb:nth-of-type(5):checked ~ .carousel__track {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.carousel__thumb:nth-of-type(5):checked ~ .carousel__track .carousel__slide:nth-of-type(5) {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.carousel__thumb:nth-of-type(5):checked ~ .carousel__track .carousel__slide:nth-of-type(4) {
+  -webkit-transform: translateX(-200%);
+  transform: translateX(-200%);
+}
+
+.carousel__thumb:nth-of-type(5):checked ~ .carousel__slide:nth-of-type(5) {
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.carousel__thumb:nth-of-type(5):checked ~ .carousel__controls:nth-of-type(5) {
+  display: block;
+  opacity: 1;
+}
+
+.carousel__thumb:nth-of-type(5):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(5) {
+  opacity: 1;
 }
 
 .carousel__slide:nth-of-type(5),
