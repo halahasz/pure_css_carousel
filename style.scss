@@ -129,8 +129,12 @@ h1{
   opacity: 1;
 }
 .carousel__thumb:nth-of-type(5):checked ~ .carousel__track {
-  -webkit-transform: translateX(-400%);
-          transform: translateX(-400%);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+.carousel__thumb:nth-of-type(5):checked ~ .carousel__track .carousel__slide:nth-of-type(5){
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 .carousel__thumb:nth-of-type(5):checked ~ .carousel__slide:nth-of-type(5) {
   transition: opacity 0.5s, -webkit-transform 0.5s;
