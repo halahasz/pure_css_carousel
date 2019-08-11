@@ -37,6 +37,10 @@ h1{
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
 }
+.carousel__thumb:nth-of-type(1):checked ~ .carousel__track .carousel__slide:nth-of-type(5) {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
 
 .carousel__thumb:nth-of-type(1):checked ~ .carousel__slide:nth-of-type(1) {
   transition: opacity 0.5s, -webkit-transform 0.5s;
