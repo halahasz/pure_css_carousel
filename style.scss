@@ -20,7 +20,7 @@ h1{
   height: 300px;
   width: 500px;
   margin: 0 auto;
-  overflow: hidden;
+  // overflow: hidden;
   text-align: center;
   position: relative;
   padding: 0;
@@ -243,31 +243,31 @@ h1{
 }
 .carousel__slide:nth-of-type(1),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(1) {
-  background-image: url("https://unsplash.it/300?random");
+  background-image: url("https://unsplash.it/630?random");
   background-size: cover;
   background-position: center;
 }
 .carousel__slide:nth-of-type(2),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(2) {
-  background-image: url("https://unsplash.it/600?random");
+  background-image: url("https://unsplash.it/640?random");
   background-size: cover;
   background-position: center;
 }
 .carousel__slide:nth-of-type(3),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(3) {
-  background-image: url("https://unsplash.it/900?random");
+  background-image: url("https://unsplash.it/650?random");
   background-size: cover;
   background-position: center;
 }
 .carousel__slide:nth-of-type(4),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(4) {
-  background-image: url("https://unsplash.it/1200?random");
+  background-image: url("https://unsplash.it/660?random");
   background-size: cover;
   background-position: center;
 }
 .carousel__slide:nth-of-type(5),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(5) {
-  background-image: url("https://unsplash.it/1500?random");
+  background-image: url("https://unsplash.it/670?random");
   background-size: cover;
   background-position: center;
 }
