@@ -11,7 +11,7 @@ html, body {
 
 h1 {
   font-size: 50px;
-  padding: 20px 0;
+  padding: 60px 0 80PX;
   text-align: center;
 }
 
@@ -23,7 +23,9 @@ h1 {
   position: relative;
   padding: 0;
   list-style: none;
-  background-color: red;
+  background-color: grey;
+  background: url("./insects.jpg") no-repeat center center;
+  background-size: cover;
 }
 
 .carousel__controls,
@@ -206,8 +208,8 @@ h1 {
 }
 
 .carousel__indicator {
-  height: 15px;
-  width: 15px;
+  height: 35px;
+  width: 35px;
   border-radius: 100%;
   display: inline-block;
   z-index: 2;
@@ -239,11 +241,6 @@ h1 {
   left: 0;
   right: 0;
   opacity: 1;
-}
-
-.carousel__track .carousel__slide:nth-of-type(1) {
-  -webkit-transform: translateX(0%);
-  transform: translateX(0%);
 }
 
 .carousel__track .carousel__slide:nth-of-type(2) {
