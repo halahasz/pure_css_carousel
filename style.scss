@@ -320,6 +320,10 @@ h1 {
 ------- FOURTH SLIDE
 **/
 
+.carousel__thumb:nth-of-type(4):checked ~ .carousel__controls:nth-of-type(4) {
+  display: block;
+  // opacity: 1;
+}
 // .carousel__track .carousel__slide:nth-of-type(4) {
 //   -webkit-transform: translateX(300%);
 //   transform: translateX(300%);
@@ -342,9 +346,21 @@ h1 {
 }
 .carousel__thumb:nth-of-type(4):checked
   ~ .carousel__track
+  .carousel__slide:nth-of-type(1) {
+  -webkit-transform: translateX(210%);
+  transform: translateX(210%);
+}
+.carousel__thumb:nth-of-type(4):checked
+  ~ .carousel__track
   .carousel__slide:nth-of-type(3) {
   -webkit-transform: translateX(-105%);
   transform: translateX(-105%);
+}
+.carousel__thumb:nth-of-type(4):checked
+  ~ .carousel__track
+  .carousel__slide:nth-of-type(2) {
+  -webkit-transform: translateX(-210%);
+  transform: translateX(-210%);
 }
 // .carousel__thumb:nth-of-type(4):checked ~ .carousel__slide:nth-of-type(4) {
 //   transition: opacity 0.5s, -webkit-transform 0.5s;
@@ -357,10 +373,6 @@ h1 {
 //   -webkit-transform: scale(1);
 //   transform: scale(1);
 // }
-.carousel__thumb:nth-of-type(4):checked ~ .carousel__controls:nth-of-type(4) {
-  display: block;
-  opacity: 1;
-}
 .carousel__thumb:nth-of-type(4):checked
   ~ .carousel__indicators
   .carousel__indicator:nth-of-type(4) {
@@ -498,14 +510,14 @@ h1 {
   transition: transform 0.5s ease 0s;
   transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
 }
-// .carousel__track .carousel__slide:nth-of-type(1) {
-//   -webkit-transform: translateX(0%);
-//           transform: translateX(0%);
-// }
-// .carousel__track .carousel__slide:nth-of-type(2) {
-//   -webkit-transform: translateX(100%);
-//           transform: translateX(100%);
-// }
+.carousel__track .carousel__slide:nth-of-type(1) {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+.carousel__track .carousel__slide:nth-of-type(2) {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
 .carousel__track .carousel__slide:nth-of-type(3) {
   -webkit-transform: translateX(210%);
   transform: translateX(210%);
