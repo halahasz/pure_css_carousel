@@ -31,6 +31,7 @@ h1 {
   opacity: 0.5;
   position: absolute;
   left: 50%;
+  z-index: 1;
   transform: translateX(-50%);
 }
 .carousel {
@@ -156,6 +157,7 @@ h1 {
 .carousel__track .carousel__slide:nth-of-type(1) {
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
+  z-index: -2;
 }
 
 /**
@@ -240,8 +242,9 @@ h1 {
   opacity: 1;
 }
 .carousel__track .carousel__slide:nth-of-type(3) {
-  -webkit-transform: translateX(210%);
-  transform: translateX(210%);
+  -webkit-transform: translateX(-105%);
+  transform: translateX(-105%);
+  z-index: -1;
 }
 
 /**
@@ -281,8 +284,9 @@ h1 {
   opacity: 1;
 }
 .carousel__track .carousel__slide:nth-of-type(4) {
-  -webkit-transform: translateX(300%);
-  transform: translateX(300%);
+  -webkit-transform: translateX(105%);
+  transform: translateX(105%);
+  z-index: -2;
 }
 
 /**
@@ -321,6 +325,12 @@ h1 {
   .carousel__slide:nth-of-type(2) {
   -webkit-transform: translateX(210%);
   transform: translateX(210%);
+}
+.carousel__thumb:nth-of-type(5):checked
+  ~ .carousel__track
+  .carousel__slide:nth-of-type(3) {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
 }
 .carousel__thumb:nth-of-type(5):checked
   ~ .carousel__indicators
