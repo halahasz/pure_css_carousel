@@ -11,7 +11,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 html,
 body {
   font-family: "Source Sans Pro", sans-serif;
@@ -34,21 +33,16 @@ h1 {
   left: 50%;
   transform: translateX(-50%);
 }
-
 .carousel {
   height: 300px;
   width: 450px;
   margin: 0 auto;
-  // overflow: hidden;
   text-align: center;
   position: relative;
   padding: 0;
   list-style: none;
-  // background-color: grey;
-  // background: url('./insects.jpg') no-repeat center center;
   background-size: cover;
 }
-
 .carousel__controls,
 .carousel__thumb {
   display: none;
@@ -81,25 +75,6 @@ h1 {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.carousel__indicators {
-  position: absolute;
-  bottom: -10px;
-  width: 100%;
-  text-align: center;
-}
-.carousel__indicator {
-  height: 15px;
-  width: 15px;
-  border-radius: 100%;
-  display: inline-block;
-  z-index: 2;
-  cursor: pointer;
-  opacity: 0.35;
-  margin: 0 2.5px 0 2.5px;
-}
-.carousel__indicator:hover {
-  opacity: 0.75;
-}
 .carousel__track {
   position: absolute;
   top: 0;
@@ -124,10 +99,34 @@ h1 {
   position: absolute;
   overflow-y: auto;
   opacity: 1;
-}
-.carousel__slide {
   overflow: hidden;
 }
+.carousel__indicators {
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+  text-align: center;
+}
+.carousel__indicator {
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  display: inline-block;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0.35;
+  margin: 0 2.5px 0 2.5px;
+}
+.carousel__indicator:hover {
+  opacity: 0.75;
+}
+
+
+
+
+
+
+
 
 /**
 ------- FIRST SLIDE
