@@ -17,6 +17,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   overflow-x: hidden;
   overflow-y: auto;
+  min-height: 100vh;
 }
 .carousel-section {
   position: relative;
@@ -62,7 +63,7 @@ h1 {
   cursor: pointer;
   border-width: 5px 5px 0 0;
   border-style: solid;
-  border-color: #fafafa;
+  border-color: black;
   opacity: 0.35;
   outline: 0;
   z-index: 3;
@@ -71,18 +72,18 @@ h1 {
   opacity: 1;
 }
 .carousel__control--backward {
-  left: 10px;
+  left: -10px;
   -webkit-transform: rotate(-135deg);
   transform: rotate(-135deg);
 }
 .carousel__control--forward {
-  right: 10px;
+  right: -10px;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 .carousel__indicators {
   position: absolute;
-  bottom: 20px;
+  bottom: -10px;
   width: 100%;
   text-align: center;
 }
@@ -325,31 +326,31 @@ h1 {
 ------- FOURTH SLIDE
 **/
 
-.carousel__track .carousel__slide:nth-of-type(4) {
-  -webkit-transform: translateX(300%);
-  transform: translateX(300%);
-}
-.carousel__thumb:nth-of-type(4):checked ~ .carousel__track {
-  -webkit-transform: translateX(200%);
-  transform: translateX(200%);
-}
+// .carousel__track .carousel__slide:nth-of-type(4) {
+//   -webkit-transform: translateX(300%);
+//   transform: translateX(300%);
+// }
+// .carousel__thumb:nth-of-type(4):checked ~ .carousel__track {
+//   -webkit-transform: translateX(200%);
+//   transform: translateX(200%);
+// }
 .carousel__thumb:nth-of-type(4):checked
   ~ .carousel__track
   .carousel__slide:nth-of-type(4) {
-  -webkit-transform: translateX(-200%);
-  transform: translateX(-200%);
+  -webkit-transform: translateX(0%);
+  transform: translateX(-0%);
 }
 .carousel__thumb:nth-of-type(4):checked
   ~ .carousel__track
   .carousel__slide:nth-of-type(5) {
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
+  -webkit-transform: translateX(105%);
+  transform: translateX(105%);
 }
 .carousel__thumb:nth-of-type(4):checked
   ~ .carousel__track
   .carousel__slide:nth-of-type(3) {
-  -webkit-transform: translateX(-300%);
-  transform: translateX(-300%);
+  -webkit-transform: translateX(-105%);
+  transform: translateX(-105%);
 }
 .carousel__thumb:nth-of-type(4):checked ~ .carousel__slide:nth-of-type(4) {
   transition: opacity 0.5s, -webkit-transform 0.5s;
@@ -423,8 +424,8 @@ h1 {
   opacity: 1;
 }
 .carousel__control {
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   margin-top: -15px;
   top: 50%;
   position: absolute;
@@ -432,27 +433,27 @@ h1 {
   cursor: pointer;
   border-width: 5px 5px 0 0;
   border-style: solid;
-  border-color: #fafafa;
+  border-color: black;
   opacity: 0.35;
   outline: 0;
   z-index: 3;
 }
 .carousel__control:hover {
-  opacity: 1;
+  opacity: .9;
 }
 .carousel__control--backward {
-  left: 10px;
+  left: -10px;
   -webkit-transform: rotate(-135deg);
           transform: rotate(-135deg);
 }
 .carousel__control--forward {
-  right: 10px;
+  right: -10px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 .carousel__indicators {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   width: 100%;
   text-align: center;
 }
