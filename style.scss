@@ -387,15 +387,15 @@ h1 {
 //   -webkit-transform: translateX(-100%);
 //   transform: translateX(-100%);
 // }
-.carousel__thumb:nth-of-type(5):checked ~ .carousel__track {
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-}
+// .carousel__thumb:nth-of-type(5):checked ~ .carousel__track {
+//   -webkit-transform: translateX(100%);
+//   transform: translateX(100%);
+// }
 .carousel__thumb:nth-of-type(5):checked
   ~ .carousel__track
   .carousel__slide:nth-of-type(5) {
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
 }
 .carousel__thumb:nth-of-type(5):checked
   ~ .carousel__track
@@ -556,7 +556,12 @@ h1 {
 ------- FIX DISAPPEARING PREVIOUS SLIDE
 **/
 
-
+@media screen and (min-width: 1600px) {
+  .carousel {
+    height: 400px;
+    width: 550px;
+  }
+}
 
 
 
