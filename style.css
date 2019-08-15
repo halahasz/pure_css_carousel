@@ -169,6 +169,10 @@ h1 {
 /**
 ------- SECOND SLIDE
 **/
+.carousel__thumb:nth-of-type(2):checked ~ .carousel__controls:nth-of-type(2) {
+  display: block;
+}
+
 .carousel__track .carousel__slide:nth-of-type(2) {
   -webkit-transform: translateX(105%);
   transform: translateX(105%);
@@ -179,23 +183,14 @@ h1 {
   transform: translateX(0%);
 }
 
-.carousel__thumb:nth-of-type(2):checked ~ .carousel__track .carousel__slide:nth-of-type(1) {
-  -webkit-transform: translateX(-105%);
-  transform: translateX(-105%);
-}
-
 .carousel__thumb:nth-of-type(2):checked ~ .carousel__track .carousel__slide:nth-of-type(5) {
   -webkit-transform: translateX(-210%);
   transform: translateX(-210%);
 }
 
-.carousel__thumb:nth-of-type(2):checked ~ .carousel__controls:nth-of-type(2) {
-  display: block;
-  opacity: 1;
-}
-
-.carousel__thumb:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) {
-  opacity: 1;
+.carousel__thumb:nth-of-type(2):checked ~ .carousel__track .carousel__slide:nth-of-type(1) {
+  -webkit-transform: translateX(-105%);
+  transform: translateX(-105%);
 }
 
 .carousel__thumb:nth-of-type(2):checked ~ .carousel__track .carousel__slide:nth-of-type(3) {
@@ -208,11 +203,8 @@ h1 {
   transform: translateX(210%);
 }
 
-.carousel__slide:nth-of-type(2),
-.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(2) {
-  background-image: url("https://unsplash.it/640?random");
-  background-size: cover;
-  background-position: center;
+.carousel__thumb:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) {
+  opacity: 1;
 }
 
 /**
