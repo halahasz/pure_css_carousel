@@ -247,9 +247,13 @@ h1 {
 // }
 
 /**
-------- THIRD SLIDE
-**/
+  ------- THIRD SLIDE
+  **/
 
+.carousel__thumb:nth-of-type(3):checked ~ .carousel__controls:nth-of-type(3) {
+  display: block;
+  // opacity: 1;
+}
 // .carousel__track .carousel__slide:nth-of-type(3) {
 //   -webkit-transform: translateX(200%);
 //   transform: translateX(200%);
@@ -299,22 +303,18 @@ h1 {
 //   -webkit-transform: scale(1);
 //   transform: scale(1);
 // }
-.carousel__thumb:nth-of-type(3):checked ~ .carousel__controls:nth-of-type(3) {
-  display: block;
-  opacity: 1;
-}
 .carousel__thumb:nth-of-type(3):checked
   ~ .carousel__indicators
   .carousel__indicator:nth-of-type(3) {
   opacity: 1;
 }
 
-.carousel__slide:nth-of-type(3),
-.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(3) {
-  background-image: url("https://unsplash.it/650?random");
-  background-size: cover;
-  background-position: center;
-}
+// .carousel__slide:nth-of-type(3),
+// .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(3) {
+//   background-image: url("https://unsplash.it/650?random");
+//   background-size: cover;
+//   background-position: center;
+// }
 
 /**
 ------- FOURTH SLIDE
