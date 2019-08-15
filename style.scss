@@ -155,12 +155,12 @@ h1 {
   -webkit-transform: translateX(-105%);
   transform: translateX(-105%);
 }
-.carousel__thumb:nth-of-type(1):checked
-  ~ .carousel__track
-  .carousel__slide:nth-of-type(4) {
-  -webkit-transform: translateX(-210%);
-  transform: translateX(-210%);
-}
+// .carousel__thumb:nth-of-type(1):checked
+//   ~ .carousel__track
+//   .carousel__slide:nth-of-type(4) {
+//   -webkit-transform: translateX(-210%);
+//   transform: translateX(-210%);
+// }
 
 .carousel__thumb:nth-of-type(1):checked
   ~ .carousel__indicators
@@ -192,12 +192,12 @@ h1 {
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
 }
-.carousel__thumb:nth-of-type(2):checked
-  ~ .carousel__track
-  .carousel__slide:nth-of-type(5) {
-  -webkit-transform: translateX(-210%);
-  transform: translateX(-210%);
-}
+// .carousel__thumb:nth-of-type(2):checked
+//   ~ .carousel__track
+//   .carousel__slide:nth-of-type(5) {
+//   -webkit-transform: translateX(-210%);
+//   transform: translateX(-210%);
+// }
 .carousel__thumb:nth-of-type(2):checked
   ~ .carousel__track
   .carousel__slide:nth-of-type(1) {
@@ -210,12 +210,12 @@ h1 {
   -webkit-transform: translateX(105%);
   transform: translateX(105%);
 }
-.carousel__thumb:nth-of-type(2):checked
-  ~ .carousel__track
-  .carousel__slide:nth-of-type(4) {
-  -webkit-transform: translateX(210%);
-  transform: translateX(210%);
-}
+// .carousel__thumb:nth-of-type(2):checked
+//   ~ .carousel__track
+//   .carousel__slide:nth-of-type(4) {
+//   -webkit-transform: translateX(210%);
+//   transform: translateX(210%);
+// }
 
 // .carousel__thumb:nth-of-type(2):checked ~ .carousel__track {
 //   -webkit-transform: translateX(-100%);
@@ -274,24 +274,24 @@ h1 {
   -webkit-transform: translateX(-105%);
   transform: translateX(-105%);
 }
-.carousel__thumb:nth-of-type(3):checked
-  ~ .carousel__track
-  .carousel__slide:nth-of-type(1) {
-  -webkit-transform: translateX(-210%);
-  transform: translateX(-210%);
-}
+// .carousel__thumb:nth-of-type(3):checked
+//   ~ .carousel__track
+//   .carousel__slide:nth-of-type(1) {
+//   -webkit-transform: translateX(-210%);
+//   transform: translateX(-210%);
+// }
 .carousel__thumb:nth-of-type(3):checked
   ~ .carousel__track
   .carousel__slide:nth-of-type(4) {
   -webkit-transform: translateX(105%);
   transform: translateX(105%);
 }
-.carousel__thumb:nth-of-type(3):checked
-  ~ .carousel__track
-  .carousel__slide:nth-of-type(5) {
-  -webkit-transform: translateX(210%);
-  transform: translateX(210%);
-}
+// .carousel__thumb:nth-of-type(3):checked
+//   ~ .carousel__track
+//   .carousel__slide:nth-of-type(5) {
+//   -webkit-transform: translateX(210%);
+//   transform: translateX(210%);
+// }
 // .carousel__thumb:nth-of-type(3):checked ~ .carousel__slide:nth-of-type(3) {
 //   transition: opacity 0.5s, -webkit-transform 0.5s;
 //   transition: opacity 0.5s, transform 0.5s;
@@ -344,24 +344,24 @@ h1 {
   -webkit-transform: translateX(105%);
   transform: translateX(105%);
 }
-.carousel__thumb:nth-of-type(4):checked
-  ~ .carousel__track
-  .carousel__slide:nth-of-type(1) {
-  -webkit-transform: translateX(210%);
-  transform: translateX(210%);
-}
+// .carousel__thumb:nth-of-type(4):checked
+//   ~ .carousel__track
+//   .carousel__slide:nth-of-type(1) {
+//   -webkit-transform: translateX(210%);
+//   transform: translateX(210%);
+// }
 .carousel__thumb:nth-of-type(4):checked
   ~ .carousel__track
   .carousel__slide:nth-of-type(3) {
   -webkit-transform: translateX(-105%);
   transform: translateX(-105%);
 }
-.carousel__thumb:nth-of-type(4):checked
-  ~ .carousel__track
-  .carousel__slide:nth-of-type(2) {
-  -webkit-transform: translateX(-210%);
-  transform: translateX(-210%);
-}
+// .carousel__thumb:nth-of-type(4):checked
+//   ~ .carousel__track
+//   .carousel__slide:nth-of-type(2) {
+//   -webkit-transform: translateX(-210%);
+//   transform: translateX(-210%);
+// }
 // .carousel__thumb:nth-of-type(4):checked ~ .carousel__slide:nth-of-type(4) {
 //   transition: opacity 0.5s, -webkit-transform 0.5s;
 //   transition: opacity 0.5s, transform 0.5s;
@@ -510,13 +510,13 @@ h1 {
   transition: transform 0.5s ease 0s;
   transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
 }
-.carousel__track .carousel__slide:nth-of-type(1) {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
-}
+// .carousel__track .carousel__slide:nth-of-type(1) {
+//   -webkit-transform: translateX(0%);
+//           transform: translateX(0%);
+// }
 .carousel__track .carousel__slide:nth-of-type(2) {
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(105%);
+          transform: translateX(105%);
 }
 .carousel__track .carousel__slide:nth-of-type(3) {
   -webkit-transform: translateX(210%);
