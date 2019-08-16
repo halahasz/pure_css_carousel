@@ -79,13 +79,15 @@ h1 {
   border-width: 2px 2px 0 0;
   border-style: solid;
   border-color: black;
-  opacity: 0.35;
   outline: 0;
   z-index: 3;
+  transition: all 0.2s ease;
 }
 
 .carousel__control:hover {
-  opacity: 0.9;
+  border-width: 4px 4px 0 0;
+  height: 35px;
+  width: 35px;
 }
 
 .carousel__control--backward {
