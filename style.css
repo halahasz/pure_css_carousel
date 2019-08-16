@@ -34,21 +34,15 @@ body {
 
 .carousel-section {
   position: relative;
-  margin-top: 200px;
+  margin-top: 130px;
   z-index: 1;
 }
 
 h1 {
   font-size: 120px;
-  white-space: nowrap;
-  padding: 0px 0 80px;
-  margin-top: -90px;
   text-align: center;
   opacity: 0.5;
-  position: absolute;
-  left: 50%;
-  z-index: 1;
-  transform: translateX(-50%);
+  text-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
 
 .carousel {
@@ -142,9 +136,10 @@ h1 {
 
 .carousel__indicators {
   position: absolute;
-  bottom: -20px;
+  bottom: -55px;
   width: 100%;
   text-align: center;
+  z-index: 2;
 }
 
 .carousel__indicator {
@@ -156,6 +151,7 @@ h1 {
   cursor: pointer;
   opacity: 0.35;
   margin: 0 2.5px 0 2.5px;
+  box-shadow: 0 10px 15px -7px rgba(0, 0, 0, 0.7);
 }
 
 .carousel__indicator:hover {
