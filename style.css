@@ -16,11 +16,26 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   min-height: 100vh;
+  background: #f7f3ea;
+}
+
+.grain {
+  position: fixed;
+  pointer-events: none;
+  -webkit-animation: grainAnimation 1s steps(4) infinite;
+  animation: grainAnimation 1s steps(4) infinite;
+  background-image: url("./grain.png");
+  height: 180%;
+  left: -40%;
+  top: -40%;
+  width: 180%;
+  z-index: 2;
 }
 
 .carousel-section {
   position: relative;
   margin-top: 200px;
+  z-index: 1;
 }
 
 h1 {
@@ -342,6 +357,99 @@ h1 {
 .carousel__track .carousel__slide:nth-of-type(5) {
   -webkit-transform: translateX(400%);
   transform: translateX(400%);
+}
+
+@-webkit-keyframes grainAnimation {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  10% {
+    -webkit-transform: translate(-5%, -5%);
+    transform: translate(-5%, -5%);
+  }
+  20% {
+    -webkit-transform: translate(-10%, 5%);
+    transform: translate(-10%, 5%);
+  }
+  30% {
+    -webkit-transform: translate(5%, -10%);
+    transform: translate(5%, -10%);
+  }
+  40% {
+    -webkit-transform: translate(-5%, 15%);
+    transform: translate(-5%, 15%);
+  }
+  50% {
+    -webkit-transform: translate(-10%, 5%);
+    transform: translate(-10%, 5%);
+  }
+  60% {
+    -webkit-transform: translate(15%, 0);
+    transform: translate(15%, 0);
+  }
+  70% {
+    -webkit-transform: translate(0, 10%);
+    transform: translate(0, 10%);
+  }
+  80% {
+    -webkit-transform: translate(-15%, 0);
+    transform: translate(-15%, 0);
+  }
+  90% {
+    -webkit-transform: translate(10%, 5%);
+    transform: translate(10%, 5%);
+  }
+  100% {
+    -webkit-transform: translate(5%, 0);
+    transform: translate(5%, 0);
+  }
+}
+@keyframes grainAnimation {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  10% {
+    -webkit-transform: translate(-5%, -5%);
+    transform: translate(-5%, -5%);
+  }
+  20% {
+    -webkit-transform: translate(-10%, 5%);
+    transform: translate(-10%, 5%);
+  }
+  30% {
+    -webkit-transform: translate(5%, -10%);
+    transform: translate(5%, -10%);
+  }
+  40% {
+    -webkit-transform: translate(-5%, 15%);
+    transform: translate(-5%, 15%);
+  }
+  50% {
+    -webkit-transform: translate(-10%, 5%);
+    transform: translate(-10%, 5%);
+  }
+  60% {
+    -webkit-transform: translate(15%, 0);
+    transform: translate(15%, 0);
+  }
+  70% {
+    -webkit-transform: translate(0, 10%);
+    transform: translate(0, 10%);
+  }
+  80% {
+    -webkit-transform: translate(-15%, 0);
+    transform: translate(-15%, 0);
+  }
+  90% {
+    -webkit-transform: translate(10%, 5%);
+    transform: translate(10%, 5%);
+  }
+  100% {
+    -webkit-transform: translate(5%, 0);
+    transform: translate(5%, 0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
