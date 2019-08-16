@@ -24,7 +24,7 @@ body {
   pointer-events: none;
   -webkit-animation: grainAnimation 1s steps(4) infinite;
   animation: grainAnimation 1s steps(4) infinite;
-  background-image: url('./grain.png');
+  background-image: url("./grain.png");
   height: 180%;
   left: -40%;
   top: -40%;
@@ -35,13 +35,20 @@ body {
   position: relative;
   margin-top: 130px;
   z-index: 1;
+  @media screen and (min-width: 1600px) {
+    margin-top: 150px;
+  }
 }
 h1 {
   font-size: 70px;
   text-align: center;
   margin-bottom: 40px;
   color: #000000b2;
-  text-shadow: 5px 10px 15px rgba(0,0,0,.3);
+  text-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+  @media screen and (min-width: 1600px) {
+    margin-bottom: 50px;
+    font-size: 80px;
+  }
 }
 .carousel {
   height: 300px;
@@ -72,13 +79,14 @@ h1 {
   border-width: 2px 2px 0 0;
   border-style: solid;
   border-color: black;
-  // opacity: 0.35;
   outline: 0;
   z-index: 3;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
+  @media screen and (min-width: 1600px) {
+    top: -25%;
+  }
 }
 .carousel__control:hover {
-  // opacity: 0.9;
   border-width: 4px 4px 0 0;
   height: 35px;
   width: 35px;
@@ -117,7 +125,7 @@ h1 {
   position: absolute;
   overflow-y: auto;
   overflow: hidden;
-  box-shadow: 0 30px 33px -25px rgba(0,0,0,.7);
+  box-shadow: 0 30px 33px -25px rgba(0, 0, 0, 0.7);
 }
 .carousel__thumb:checked ~ .carousel__slide {
   top: 0;
@@ -130,6 +138,9 @@ h1 {
   width: 100%;
   text-align: center;
   z-index: 2;
+  @media screen and (min-width: 1600px) {
+    bottom: -70px;
+  }
 }
 .carousel__indicator {
   height: 35px;
@@ -140,7 +151,7 @@ h1 {
   cursor: pointer;
   opacity: 0.35;
   margin: 0 2.5px 0 2.5px;
-  box-shadow: 0 10px 15px -7px rgba(0,0,0,.7);
+  box-shadow: 0 10px 15px -7px rgba(0, 0, 0, 0.7);
 }
 .carousel__indicator:hover {
   opacity: 0.75;
