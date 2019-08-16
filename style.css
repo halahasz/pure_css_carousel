@@ -131,6 +131,7 @@ h1 {
   position: absolute;
   overflow-y: auto;
   overflow: hidden;
+  box-shadow: 0 30px 33px -25px rgba(0, 0, 0, 0.7);
 }
 
 .carousel__thumb:checked ~ .carousel__slide {
