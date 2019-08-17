@@ -1,67 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <title>Pure CSS Carousel</title>
-</head>
-<body>
-  <div class="grain"></div>
-  <section class="carousel-section">
-    <h1>Pure CSS Carousel</h1>
-    <ul class="carousel my-carousel carousel--thumb">
-      <input class="carousel__thumb" type="radio" id="A" name="thumb" checked="checked"/>
-      <input class="carousel__thumb" type="radio" id="B" name="thumb"/>
-      <input class="carousel__thumb" type="radio" id="C" name="thumb"/>
-      <input class="carousel__thumb" type="radio" id="D" name="thumb"/>
-      <input class="carousel__thumb" type="radio" id="E" name="thumb"/>
-      <div class="carousel__controls">
-        <label class="carousel__control carousel__control--backward" for="E"></label>
-        <label class="carousel__control carousel__control--forward" for="B"></label>
-      </div>
-      <div class="carousel__controls">
-        <label class="carousel__control carousel__control--backward" for="A"></label>
-        <label class="carousel__control carousel__control--forward" for="C"></label>
-      </div>
-      <div class="carousel__controls">
-        <label class="carousel__control carousel__control--backward" for="B"></label>
-        <label class="carousel__control carousel__control--forward" for="D"></label>
-      </div>
-      <div class="carousel__controls">
-        <label class="carousel__control carousel__control--backward" for="C"></label>
-        <label class="carousel__control carousel__control--forward" for="E"></label>
-      </div>
-      <div class="carousel__controls">
-        <label class="carousel__control carousel__control--backward" for="D"></label>
-        <label class="carousel__control carousel__control--forward" for="A"></label>
-      </div>
-      <div class="carousel__track">
-        <li class="carousel__slide">
-          <h2>A</h2>
-        </li>
-        <li class="carousel__slide">
-          <h2>B</h2>
-        </li>
-        <li class="carousel__slide">
-          <h2>C</h2>
-        </li>
-        <li class="carousel__slide">
-          <h2>D</h2>
-        </li>
-        <li class="carousel__slide">
-          <h2>E</h2>
-        </li>
-      </div>
-      <div class="carousel__indicators">
-        <label class="carousel__indicator" for="A"></label>
-        <label class="carousel__indicator" for="B"></label>
-        <label class="carousel__indicator" for="C"></label>
-        <label class="carousel__indicator" for="D"></label>
-        <label class="carousel__indicator" for="E"></label>
-      </div>
-    </ul>
-  </section>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Pure CSS Carousel</title>
+  </head>
+  <body>
+    <div class="grain"></div>
+    <section class="carousel-section">
+      <h1>Pure CSS Carousel</h1>
+      <ul class="carousel my-carousel carousel--thumb">
+        <input class="carousel__thumb" type="radio" id="1" name="thumb" checked="checked" />
+        <input class="carousel__thumb" type="radio" id="2" name="thumb" />
+        <input class="carousel__thumb" type="radio" id="3" name="thumb" />
+        <input class="carousel__thumb" type="radio" id="4" name="thumb" />
+        <input class="carousel__thumb" type="radio" id="5" name="thumb" />
+        <div class="carousel__controls">
+          <label
+            class="carousel__control carousel__control--backward"
+            for="5"
+          ></label>
+          <label
+            class="carousel__control carousel__control--forward"
+            for="2"
+          ></label>
+        </div>
+        <div class="carousel__controls">
+          <label
+            class="carousel__control carousel__control--backward"
+            for="1"
+          ></label>
+          <label
+            class="carousel__control carousel__control--forward"
+            for="3"
+          ></label>
+        </div>
+        <div class="carousel__controls">
+          <label
+            class="carousel__control carousel__control--backward"
+            for="2"
+          ></label>
+          <label
+            class="carousel__control carousel__control--forward"
+            for="4"
+          ></label>
+        </div>
+        <div class="carousel__controls">
+          <label
+            class="carousel__control carousel__control--backward"
+            for="3"
+          ></label>
+          <label
+            class="carousel__control carousel__control--forward"
+            for="5"
+          ></label>
+        </div>
+        <div class="carousel__controls">
+          <label
+            class="carousel__control carousel__control--backward"
+            for="4"
+          ></label>
+          <label
+            class="carousel__control carousel__control--forward"
+            for="1"
+          ></label>
+        </div>
+        <div class="carousel__track">
+          <li class="carousel__slide">
+            <h2>1</h2>
+          </li>
+          <li class="carousel__slide">
+            <h2>2</h2>
+          </li>
+          <li class="carousel__slide">
+            <h2>3</h2>
+          </li>
+          <li class="carousel__slide">
+            <h2>4</h2>
+          </li>
+          <li class="carousel__slide">
+            <h2>5</h2>
+          </li>
+        </div>
+        <div class="carousel__indicators">
+          <label class="carousel__indicator" for="1"></label>
+          <label class="carousel__indicator" for="2"></label>
+          <label class="carousel__indicator" for="3"></label>
+          <label class="carousel__indicator" for="4"></label>
+          <label class="carousel__indicator" for="5"></label>
+        </div>
+      </ul>
+    </section>
+  </body>
 </html>
