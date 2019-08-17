@@ -52,12 +52,13 @@ h1 {
 }
 h2 {
   font-size: 150px;
-  color: rgba(255,255,255, 0.6);
+  color: rgba(#f7f3ea, 0.6);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+  transition: all .3s .3s ease;
 }
 .carousel {
   height: 300px;
@@ -143,7 +144,7 @@ h2 {
 }
 .carousel__indicators {
   position: absolute;
-  bottom: -55px;
+  bottom: -60px;
   width: 100%;
   text-align: center;
   z-index: 2;
@@ -191,6 +192,12 @@ h2 {
   box-shadow: none;
 }
 .carousel__thumb:nth-of-type(1):checked
+  ~ .carousel__track
+  .carousel__slide:nth-of-type(1) h2 {
+  color: #f7f3ea;
+  font-size: 200px;
+}
+.carousel__thumb:nth-of-type(1):checked
   ~ .carousel__indicators
   .carousel__indicator:nth-of-type(1) {
   opacity: 1;
@@ -223,6 +230,12 @@ h2 {
   .carousel__slide:nth-of-type(2) {
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
+}
+.carousel__thumb:nth-of-type(2):checked
+  ~ .carousel__track
+  .carousel__slide:nth-of-type(2) h2 {
+  color: #f7f3ea;
+  font-size: 200px;
 }
 .carousel__thumb:nth-of-type(2):checked
   ~ .carousel__track
@@ -281,6 +294,12 @@ h2 {
 }
 .carousel__thumb:nth-of-type(3):checked
   ~ .carousel__track
+  .carousel__slide:nth-of-type(3) h2 {
+  color: #f7f3ea;
+  font-size: 200px;
+}
+.carousel__thumb:nth-of-type(3):checked
+  ~ .carousel__track
   .carousel__slide:nth-of-type(2) {
   -webkit-transform: translateX(-105%);
   transform: translateX(-105%);
@@ -322,6 +341,12 @@ h2 {
   -webkit-transform: translateX(0%);
   transform: translateX(-0%);
   box-shadow: none;
+}
+.carousel__thumb:nth-of-type(4):checked
+  ~ .carousel__track
+  .carousel__slide:nth-of-type(4) h2 {
+  color: #f7f3ea;
+  font-size: 200px;
 }
 .carousel__thumb:nth-of-type(4):checked
   ~ .carousel__track
@@ -369,6 +394,12 @@ h2 {
   transform: translateX(0%);
   z-index: 1;
   box-shadow: none;
+}
+.carousel__thumb:nth-of-type(5):checked
+  ~ .carousel__track
+  .carousel__slide:nth-of-type(5) h2 {
+  color: #f7f3ea;
+  font-size: 200px;
 }
 .carousel__thumb:nth-of-type(5):checked
   ~ .carousel__track
