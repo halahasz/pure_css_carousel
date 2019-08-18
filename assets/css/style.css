@@ -51,6 +51,10 @@ h1 {
     h1 {
       margin-bottom: 50px;
       font-size: 80px; } }
+  @media screen and (max-width: 670px) {
+    h1 {
+      font-size: 65px;
+      line-height: 75px; } }
 
 h2 {
   font-size: 150px;
@@ -84,6 +88,9 @@ h2 {
     .carousel {
       height: 400px;
       width: 550px; } }
+  @media screen and (max-width: 600px) {
+    .carousel {
+      width: 320px; } }
 
 .carousel__controls,
 .carousel__thumb {
@@ -109,6 +116,9 @@ h2 {
   @media screen and (min-width: 1600px) {
     .carousel__control {
       top: -25%; } }
+  @media screen and (max-width: 670px) {
+    .carousel__control {
+      top: -50%; } }
 
 .carousel__control:hover {
   border-width: 4px 4px 0 0;
@@ -122,6 +132,15 @@ h2 {
    -ms-transform: rotate(-135deg);
     -o-transform: rotate(-135deg);
        transform: rotate(-135deg); }
+  @media screen and (max-width: 670px) {
+    .carousel__control--backward {
+      left: 20px; } }
+  @media screen and (max-width: 519px) {
+    .carousel__control--backward {
+      left: 0; } }
+  @media screen and (max-width: 325px) {
+    .carousel__control--backward {
+      left: 9px; } }
 
 .carousel__control--forward {
   right: -100px;
@@ -130,6 +149,15 @@ h2 {
    -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
        transform: rotate(45deg); }
+  @media screen and (max-width: 670px) {
+    .carousel__control--forward {
+      right: 20px; } }
+  @media screen and (max-width: 519px) {
+    .carousel__control--forward {
+      right: 0; } }
+  @media screen and (max-width: 325px) {
+    .carousel__control--forward {
+      right: 9px; } }
 
 .carousel__track {
   position: absolute;
