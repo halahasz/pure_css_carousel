@@ -39,7 +39,7 @@ body {
     margin-top: 150px;
   }
   @media screen and (max-width: 670px) {
-    margin-top: 40px;
+    margin-top: 80px;
   }
 }
 h1 {
@@ -109,7 +109,9 @@ h2 {
   @media screen and (max-width: 670px) {
     top: -50%;
   }
-  
+  @media screen and (max-width: 519px) {
+    top: -46%;
+  }
 }
 .carousel__control:hover {
   border-width: 4px 4px 0 0;

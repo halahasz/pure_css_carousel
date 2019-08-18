@@ -42,7 +42,7 @@ body {
       margin-top: 150px; } }
   @media screen and (max-width: 670px) {
     .carousel-section {
-      margin-top: 40px; } }
+      margin-top: 80px; } }
 
 h1 {
   font-size: 70px;
@@ -123,6 +123,9 @@ h2 {
   @media screen and (max-width: 670px) {
     .carousel__control {
       top: -50%; } }
+  @media screen and (max-width: 519px) {
+    .carousel__control {
+      top: -46%; } }
 
 .carousel__control:hover {
   border-width: 4px 4px 0 0;
