@@ -93,7 +93,8 @@ h2 {
       width: 550px; } }
   @media screen and (max-width: 600px) {
     .carousel {
-      width: 320px; } }
+      width: 320px;
+      height: 250px; } }
 
 .carousel__controls,
 .carousel__thumb {
