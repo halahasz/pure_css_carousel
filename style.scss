@@ -34,6 +34,7 @@ body {
 .carousel-section {
   position: relative;
   margin-top: 130px;
+  margin-bottom: 80px;
   z-index: 1;
   @media screen and (min-width: 1600px) {
     margin-top: 150px;
@@ -41,7 +42,7 @@ body {
   @media screen and (max-width: 670px) {
     margin-top: 80px;
   }
-  @media screen and (max-width: 519px) {
+  @media screen and (max-width: 390px) {
     margin-top: 40px;
   }
 }
@@ -58,6 +59,10 @@ h1 {
   @media screen and (max-width: 670px) {
     font-size: 65px;
     line-height: 75px;
+  }
+  @media screen and (max-width: 390px) {
+    font-size: 50px;
+    line-height: 60px;
   }
 }
 h2 {
@@ -110,10 +115,10 @@ h2 {
     top: -25%;
   } 
   @media screen and (max-width: 670px) {
-    top: -50%;
-  }
-  @media screen and (max-width: 519px) {
     top: -46%;
+  }
+  @media screen and (max-width: 390px) {
+    top: -40%;
   }
 }
 .carousel__control:hover {

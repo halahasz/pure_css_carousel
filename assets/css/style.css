@@ -36,6 +36,7 @@ body {
 .carousel-section {
   position: relative;
   margin-top: 130px;
+  margin-bottom: 80px;
   z-index: 1; }
   @media screen and (min-width: 1600px) {
     .carousel-section {
@@ -43,7 +44,7 @@ body {
   @media screen and (max-width: 670px) {
     .carousel-section {
       margin-top: 80px; } }
-  @media screen and (max-width: 519px) {
+  @media screen and (max-width: 390px) {
     .carousel-section {
       margin-top: 40px; } }
 
@@ -61,6 +62,10 @@ h1 {
     h1 {
       font-size: 65px;
       line-height: 75px; } }
+  @media screen and (max-width: 390px) {
+    h1 {
+      font-size: 50px;
+      line-height: 60px; } }
 
 h2 {
   font-size: 150px;
@@ -125,10 +130,10 @@ h2 {
       top: -25%; } }
   @media screen and (max-width: 670px) {
     .carousel__control {
-      top: -50%; } }
-  @media screen and (max-width: 519px) {
-    .carousel__control {
       top: -46%; } }
+  @media screen and (max-width: 390px) {
+    .carousel__control {
+      top: -40%; } }
 
 .carousel__control:hover {
   border-width: 4px 4px 0 0;
