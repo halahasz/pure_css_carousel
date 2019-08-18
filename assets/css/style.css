@@ -43,6 +43,9 @@ body {
   @media screen and (max-width: 670px) {
     .carousel-section {
       margin-top: 80px; } }
+  @media screen and (max-width: 519px) {
+    .carousel-section {
+      margin-top: 40px; } }
 
 h1 {
   font-size: 70px;
